@@ -16,11 +16,12 @@ CardTitle
     right: 0px;
     margin-right: 20px;
     width: 100%;
-    min-height: 50px;
+    min-height: 20px;
     border: 1px solid #eee;
     padding: 5px;
     padding-left: 10px;
     background-color: white;
     color: #18bc9c;
+    text-align: center;
 }
 

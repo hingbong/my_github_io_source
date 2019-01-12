@@ -8,7 +8,7 @@ export default class Footer extends Component
     {
         return <Card className="footer">
         <CardBody>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.         
+          <CardText>Copyright © 2019
           </CardText>
         </CardBody>
       </Card>
