@@ -10,17 +10,27 @@ export default class SearchBar extends Component
         // console.log(document.querySelector('#keywords').value);
         window.location.href = "https://www.baidu.com/s?wd=" + document.querySelector('#keywords').value;
       }
+
+      EnterPress(e)
+      {
+        if(e.keyCode === 13)
+        { 
+          this.search();
+        } 
+      }
+      
+
       render()
       {
         return <Card>
         <CardBody>
           <CardTitle><Media id="logo" src="image/google.png" alt="logo"/><h1>Baidu Search</h1></CardTitle>
         <InputGroup>
-        <Input id="keywords" placeholder="Input the keywords which you want to search" />
+        <Input id="keywords" placeholder="Input the keywords which you want to search" onKeyDown={(e)=>{this.EnterPress(e);}}  />
         <InputGroupAddon addonType="append">
         <Button color="primary" onClick={this.search}>Search</Button>
         </InputGroupAddon>
-      </InputGroup>
+        </InputGroup>
         </CardBody>
       </Card>
       }
